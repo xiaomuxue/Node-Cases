@@ -1,0 +1,24 @@
+.breadcrumb{
+    background: rgba(210,232,229,.5);
+}
+.breadcrumb a{
+    color: #11A14E;
+}
+.subdivide-content:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.subdivide-content li{
+    list-style-type:none;
+    float: left;
+    line-height: 24px;
+    width: 10%;
+}
+.subdivide-content li a{
+    color: #11A14E;
+}
+
+#classify-content{
+    padding:0;
+}

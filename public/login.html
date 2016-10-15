@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="keywords" content="美食,食谱,菜单,熊猫,熊猫美食,熊猫美食网">
+    <meta http-equiv="description" content="熊猫美食一个中国美食社区，为广大中国用户提供美食交友平台以及各种美食食谱，美食大全，美食问答，饮食健康，轻松学会怎么做菜。">
+    <title>登录</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login-reg.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header class="container-fluid login-header">
+        <a href="index.html" class="col-lg-3 col-md-12">
+            <img class="center-block" src="images/logoinfo.png" alt="" height="60">
+        </a>
+    </header>
+
+    <div class="container-fluid login-content">
+        <div class="row">
+            <div class="visible-lg-block col-lg-6">
+                <img class="center-block" src="images/loginimg.png" alt="登录图片">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="panel panel-default center-block" style="width:60%;">
+                    <div class="panel-heading">
+                        <span>登录</span>
+                        <span class="pull-right">没有账号，<a href="register.html">去注册&gt;</a></span>
+                    </div>
+                    <div class="panel-body login-content-body">
+                        <form onsubmit="logining(); return false;" id="myform" class="form-signin">
+                            <div class="form-group">
+                                <label for="uname">用户名：</label>
+                                <input type="text" id="uname" name="uname" class="form-control" placeholder="请输入你的用户ID或用户名" />
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">密码：</label>
+                                <input type="password" id="pwd" name="pwd" class="form-control" placeholder="请输入你的密码" />
+                            </div>
+                            <div>
+                                <a href="#">忘记密码&gt;</a>
+                                <span id="logininfo" class="text-danger pull-right"></span>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block login-btn">登录</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container-fluid login-footer">
+        CopyRigth &copy; 2009-2016
+        <a href="index.html" target="_blank">衡阳熊猫信息科技有限公司</a>
+        版权所有
+        食品流通许可证SP11012345678923456
+    </footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrapverify.js"></script>
+<script src="js/jquery-popups.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

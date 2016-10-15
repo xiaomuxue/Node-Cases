@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="keywords" content="美食,食谱,菜单,熊猫,熊猫美食,熊猫美食网">
+    <meta http-equiv="description" content="熊猫美食一个中国美食社区，为广大中国用户提供美食交友平台以及各种美食食谱，美食大全，美食问答，饮食健康，轻松学会怎么做菜。">
+    <title>注册</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login-reg.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="container-fluid login-header">
+    <a href="index.html" class="col-lg-3 col-md-12">
+        <img class="center-block" src="images/logoinfo.png" alt="" height="60">
+    </a>
+</header>
+
+
+<div class="container-fluid login-content">
+
+<!--         <p class="center-block text-danger">注册失败</p>
+        <p class="center-block text-danger">原因为： <% text %></p>
+        <p class="center-block"><a href="register.html">返回到注册页面 <span>自动跳转</span></a></p>
+        <script>
+            setTimeout(function() {
+                location.href='register.html';
+            },5000);
+        </script> -->
+
+        <p class="text-center center-block text-success">恭喜你注册成功！</p>
+        <p class="text-center center-block text-success">你的用户id为： <% id %></p>
+        <p class="text-center center-block"><a href="login.html">跳转到登录页面  <span id="spantime">8</span>秒后自动跳转</a></p>
+        <script>
+            // setTimeout(function() {
+            //     location.href='login.html';
+            // },5000);
+            var time = new Date().getTime()+8000;
+            var timespan = document.getElementById('spantime');
+            setInterval(function(){
+                var nowtime = new Date().getTime();
+                if(nowtime >= time){
+                    location.href='login.html';
+                }
+                timespan.innerHTML = parseInt((time-nowtime)/1000);
+            },50);
+        </script>
+
+
+</div>
+
+<footer class="footer container-fluid login-footer">
+    CopyRigth &copy; 2009-2016
+    <a href="index.html" target="_blank">衡阳熊猫信息科技有限公司</a>
+    版权所有
+    食品流通许可证SP11012345678923456
+</footer>
+
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.myinput{
+    width: 100%;
+}
+
+.shicai input{
+    height: 40px;
+}
+#thumbnail_a{
+    border: 0px;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clear{
+    border-radius:5px;!important;
+}
+
+.tab-content{
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    border-top:none;
+    padding:10px;
+}
+.tab-content li div label{
+    margin: 5px;
+}
+
+label{
+    cursor: pointer;
+}
+label p{
+    color: #fff;
+}
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="keywords" content="美食,食谱,菜单,熊猫,熊猫美食,熊猫美食网">
+    <meta http-equiv="description" content="熊猫美食一个中国美食社区，为广大中国用户提供美食交友平台以及各种美食食谱，美食大全，美食问答，饮食健康，轻松学会怎么做菜。">
+    <title>注册</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login-reg.css">
+    <link rel="stylesheet" type="text/css" href="css/reg.css">
+    <!--[if lt IE 9]>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="container-fluid login-header">
+    <a href="index.html" class="col-lg-3 col-md-12">
+        <img class="center-block" src="images/logoinfo.png" alt="" height="60">
+    </a>
+</header>
+
+<div class="container-fluid login-content">
+    <div class="row">
+        <div class="col-lg-8 col-lg-push-2">
+            <div class="panel panel-default center-block">
+                <div class="panel-heading login-header">
+                    <span>新用户注册</span>
+                    <span class="pull-right">已有账号，<a href="login.html">直接登录</a></span>
+                </div>
+                <div class="panel-body">
+                    <form id="myform" action="/userRegister" method="post" class="center-block my-form" enctype="multipart/form-data">
+                        <div class="center-block choiceimg">
+                            <label for="userimg" id="showimg">
+                                <p class="text-info text-center">请选择你的头像(小于200k)</p>
+                            </label>
+                            <input type="file" id="userimg" name="userimg"/>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label class="input-group-addon" for="uname"><span class="glyphicon glyphicon-user"></span></label>
+                                <input type="text" id="uname" name="uname" class="form-control" placeholder="请输入你的用户名" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label class="input-group-addon" for="telephone"><span class="glyphicon glyphicon-earphone"></span></label>
+                                <input type="text" id="telephone" name="telephone" class="form-control" placeholder="请输入你的手机号" />
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label class="input-group-addon" for="email"><span class="glyphicon glyphicon-envelope"></span></label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="请输入你的邮箱" />
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label class="input-group-addon" for="password"><span class="glyphicon glyphicon-lock"></span></label>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="请输入你的密码" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label class="input-group-addon" for="againpassword"><span class="glyphicon glyphicon-lock"></span></label>
+                                <input type="password" id="againpassword" name="againpassword" class="form-control" placeholder="请再次输入你的密码" />
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label class="input-group-addon" for="birthday"><span class="glyphicon glyphicon-calendar"></span></label>
+                                <input type="date" id="birthday" name="birthday" class="form-control"/>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <input id="male" type="radio" name="sex" value="男" >
+                                    </span>
+                                    <label for="male" class="form-control">男</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <input id="female" type="radio" name="sex" value="女" >
+                                    </span>
+                                    <label for="female" class="form-control">女</label>
+                                </div>
+                            </div>
+                         </div>
+
+                        <br>
+                        <div>
+                            <ul class="nav nav-tabs nav-justified" id="classify">
+
+                            </ul>
+                            <ul class="tab-content" id="subdivide">
+
+                            </ul>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" id="submit" class="btn btn-success center-block">注册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="footer container-fluid login-footer">
+    CopyRigth &copy; 2009-2016
+    <a href="index.html" target="_blank">衡阳熊猫信息科技有限公司</a>
+    版权所有
+    食品流通许可证SP11012345678923456
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrapverify.js"></script>
+<script src="js/reg.js"></script>
+</body>
+</html>
+</body>
+</html>

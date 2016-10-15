@@ -1,0 +1,44 @@
+.my-form{
+    width:60%;
+    padding: 0 20px;
+}
+.choiceimg{
+    margin: 50px auto;
+    text-align: center;
+}
+.choiceimg label{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../images/logo.png") no-repeat center;
+    background-color: #d4d4d4;
+    background-size: 80px;
+    position: relative;
+}
+.choiceimg label p{
+    position: absolute;
+    top: 110px;
+    font-weight: normal;
+}
+.choiceimg input{
+    display: none;
+}
+.tab-content{
+    border: 1px solid #ddd;
+    border-radius: 0 0 8px 8px;
+    border-top:none;
+    padding:10px;
+}
+.tab-content li div label{
+    margin: 5px;
+}
+
+.form-control-feedback{
+    top: 0 !important;
+}
+
+.input-group-addon-my{
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+}

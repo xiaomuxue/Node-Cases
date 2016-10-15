@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="keywords" content="美食,食谱,菜单,熊猫,熊猫美食,熊猫美食网">
+    <meta http-equiv="description" content="熊猫美食一个中国美食社区，为广大中国用户提供美食交友平台以及各种美食食谱，美食大全，美食问答，饮食健康，轻松学会怎么做菜。">
+    <title>熊猫美食网</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<header class="navbar navbar-default">
+    <div class="container-fluid header-1">
+        <a href="index.html" class="navbar-header">
+            <img class="navbar-bread" src="images/logoinfo.png" alt="logo" height="50">
+        </a>
+
+        <div style="position: relative;" id="logingroup" class="btn-group navbar-btn pull-right">
+            <a class="btn btn-def" href="login.html">登录</a>
+            <a class="btn btn-def" href="register.html">注册</a>
+        </div>
+
+
+    </div>
+    <div class="container-fluid header-2">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">首页</a></li>
+            <li class="dropdown">
+                <a href="menu.html" class="dropdown-toggle" data-toggle="dropdown">菜谱 <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <div class="upicon"></div>
+                    <li><a href="charts.html">排行榜</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="classify.html">分类</a>
+                        <ul id="showclassify">
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="foodquestion.html">饮食问答</a></li>
+            <li class="active"><a href="foodmood.html">美食心情</a></li>
+            <li><a href="foodhealth.html">饮食健康</a></li>
+        </ul>
+
+        <form class="navbar-form navbar-right">
+            <div class="input-group">
+                <input type="text" class="form-control" name="search" placeholder="搜索你感兴趣的内容……">
+                <div class="input-group-btn">
+                    <button class="btn btn-def"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</header>
+
+<div class="container-fluid">
+    <ol class="breadcrumb">
+        <li><a href="foodmood.html">全部日记</a></li>
+        <li class="active">日记详情</li>
+    </ol>
+</div>
+
+<div class="container-fluid">
+    <div class="col-xs-12 col-md-8 col-lg-8 text-center">
+        <div class="row">
+            <div class="col-lg-12" style="margin: 20px 0;">
+                <div class="thumbnail" id="include">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-lg-12">
+                <a href=""><h3 class="text-info">菜品作者 菜品名的评论</h3></a>
+                <div class="col-lg-2" style="margin: 20px 0">
+                    <img src="images/date3.jpg" alt="用户名">
+                </div>
+                <div class="col-lg-10 panel">
+                    <textarea class="col-lg-12" style="height:100px;margin-bottom: 20px;border: 0px">
+                    
+                    </textarea>
+                </div>
+            </div>
+            <input class="btn btn-success" value="发表" type="button" style="margin-bottom: 20px"/>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="border-bottom: 1px solid #cccccc;margin-bottom: 20px;">
+                <div class="col-lg-1" style="padding-bottom: 10px">
+                    <img src="images/date3.jpg" alt="用户名">
+                </div>
+                <div class="col-lg-11">
+                   <h5 class="text-left" style="margin-left: 40px"><a href=""style="color:#2BC467">用户名</a><small>:评论提交时间</small><a href="" style="color:#2BC467">&nbsp;&nbsp;回复</a></h5>
+                    <p class="text-left"style="margin-left: 40px">评论：比如好吃好吃好好吃</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12" style="border-bottom: 1px solid #cccccc;margin-bottom: 20px;">
+                <div class="col-lg-1" style="padding-bottom: 10px">
+                    <img src="images/date3.jpg" alt="用户名">
+                </div>
+                <div class="col-lg-11">
+                    <h5 class="text-left" style="margin-left: 40px"><a href=""style="color:#2BC467">用户名</a><small>:评论提交时间</small><a href="" style="color:#2BC467">&nbsp;&nbsp;回复</a></h5>
+                    <p class="text-left"style="margin-left: 40px">评论：比如好吃好吃好好吃</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="visible-lg-block col-lg-4" style="margin: 20px 0;">
+        <div class="panel panel-def">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-12" id="userinfo">
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body" id="selfinfo">
+                <!--<h3>TA的最新日记<small>(NUM)</small></h3><br />-->
+                <!--<img src="images/date1.jpg" alt="菜品名" style="width: 73px;height: 73px">-->
+                <!--<img src="images/date1.jpg" alt="菜品名" style="width: 73px;height: 73px">-->
+                <!--<img src="images/date1.jpg" alt="菜品名" style="width: 73px;height: 73px">-->
+                <!--<img src="images/date1.jpg" alt="菜品名" style="width: 73px;height: 73px">-->
+                <!--<img src="images/date1.jpg" alt="菜品名" style="width: 73px;height: 73px">-->
+                <!--<img src="images/date1.jpg" alt="菜品名" style="width: 73px;height: 73px">-->
+                <!--<img src="images/date1.jpg" alt="菜品名" style="width: 73px;height: 73px">-->
+                <h3>TA的最新欢迎的日记</h3><br />
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <img src="images/date1.jpg" alt="菜品名" style="width: 135px;height: 125px;">
+                        <span class="text-success">菜品名</span>
+                        <p><span>2</span>个赞</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/date1.jpg" alt="菜品名" style="width: 135px;height: 125px;">
+                        <span class="text-success">菜品名</span>
+                        <p><span>3</span>个赞</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/date1.jpg" alt="菜品名" style="width: 135px;height: 125px;">
+                        <span class="text-success">菜品名</span>
+                        <p><span>4</span>个赞</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--<div class="row">-->
+        <!--<footer class="container-fluid">-->
+            <!--<ul class="foot-top">-->
+                <!--<li><a href="/about.html" rel="nofollow" target="_blank">关于熊猫</a></li>-->
+                <!--<li>·</li>-->
+                <!--<li><a href="/about.html" rel="nofollow" target="_blank">菜谱大全</a></li>-->
+                <!--<li>·</li>-->
+                <!--<li><a href="/about.html" rel="nofollow" target="_blank">美食心情</a></li>-->
+                <!--<li>·</li>-->
+                <!--<li><a href="/about.html" rel="nofollow" target="_blank">饮食健康</a></li>-->
+                <!--<li>·</li>-->
+                <!--<li><a href="/about.html" rel="nofollow" target="_blank">美食问答</a></li>-->
+            <!--</ul>-->
+            <!--<div class="foot-bottom">-->
+                <!--CopyRigth © 2009-2016-->
+                <!--<a href="index.html" target="_blank">衡阳熊猫信息科技有限公司</a>-->
+                <!--版权所有-->
+                <!--食品流通许可证SP1101061510252413-->
+            <!--</div>-->
+        <!--</footer>-->
+    <!--</div>-->
+<div id="float_div">
+    <a href="#" id="my_QQ"></a>
+    <a href="#" id="my_Code"></a>
+    <a href="#" id="to_Top"></a>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/to_top.js"></script>
+<script src="js/foodmood-detail.js"></script>
+<script>
+    $('#float_div').to_Top({
+        qqnum: '123456',  //要联系的QQ号
+        qqid: 'my_QQ',  //qq的id名
+        codeid: 'my_Code',  //二维码的id名
+        topid: 'to_Top',	//返回顶部的id名
+        codeimgurl: 'code.png'  //二维码图片地址
+    });
+</script>
+
+</body>
+</html>

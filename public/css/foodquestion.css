@@ -1,0 +1,92 @@
+.nav-pills>.active>a{
+    background: rgb(111,191,177) !important;
+}
+.nav-pills>li>a{
+    color: #12937C;
+}
+.Header span{
+    color:#999;
+    font-size:15px;
+}
+.list-group-item-text a{
+    color:#333 !important;
+    background:#fff !important;
+    font-size:16px;
+}
+.list-group-item-text{
+    color:#999 !important;
+}
+.list-group-item-text span{
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+#Middle{
+    padding:0 0 55% 55%;
+}
+.pull{
+    padding:-20% 70% 70% !important;
+    margin-left:25%;
+}
+h4{
+    font-size:16px;
+}
+.page-header a{
+    text-decoration:none;
+}
+.page-header a h5{
+    margin-left: 0;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+    font-size:15px;
+    color:#333;
+}
+.page-header:hover a h5{
+    color:rgb(31,166,88);
+}
+.browse{
+    color:#999;
+    margin-top:-12%;
+}
+.img-cricle{
+    display:inline-block !important;
+    width:50px;
+    height:50px;
+}
+.name{
+    font-size:16px;
+    margin-left:4%;
+    color:#333;
+}
+.name:hover{
+    color:rgb(31,166,88);
+}
+.replay{
+    font-size:12px;
+}
+.replay p{
+    margin-left:30%;
+}
+.replay p span{
+    color:rgb(31,166,88);
+    font-family: Georgia;
+}
+.attention span{
+    margin-top:-12%;
+}
+.attention span a{
+    color:rgb(31,166,88);
+}
+.panel{
+    box-shadow: 1px 1px 3px 1px #ccc;
+}
+.myQuestion{
+    padding: 30px 20px;
+    color: #999;
+}
+.myQuestion:after{
+    content: '';
+    display: block;
+    clear: both;
+}
